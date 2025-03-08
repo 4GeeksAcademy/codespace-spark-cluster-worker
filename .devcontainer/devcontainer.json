@@ -10,5 +10,5 @@
 			"label": "spark-webUI"
 		}
 	},
-	"postCreateCommand": "sudo /opt/spark/sbin/start-worker.sh perdrizet.org:7077"
+	"postCreateCommand": "sudo /opt/spark/sbin/start-worker.sh 74.208.107.78:7077"
 }
