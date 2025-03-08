@@ -15,5 +15,5 @@
 	//"forwardPorts": [8080]
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "sudo /opt/spark/sbin/start-worker.sh 74.208.107.78:7077"
+	"postCreateCommand": "sudo /opt/spark/sbin/start-worker.sh probable-meme-wgq56gwg4rx2v594-8080.app.github.dev/:7077"
 }
