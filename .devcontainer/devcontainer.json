@@ -4,16 +4,11 @@
 	"name": "codespace-spark-cluster-worker",
 	"image": "mcr.microsoft.com/devcontainers/python:0-3.11",
 	"onCreateCommand": ".devcontainer/get_spark.sh",
-	"customizations": {
-	  "vscode": {
-		"settings": {},
-		"extensions": []
-	  }
-	}
-
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	//"forwardPorts": [8080]
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	//"postCreateCommand": "sudo /opt/spark/sbin/start-worker.sh probable-meme-wgq56gwg4rx2v594-8080.app.github.dev:7077"
+	"forwardPorts": [8080],
+	"portsAttributes": {
+		"8081": {
+			"label": "spark-webUI"
+		}
+	},
+	"postCreateCommand": "sudo /opt/spark/sbin/start-worker.sh perdrizet.org:7077"
 }
