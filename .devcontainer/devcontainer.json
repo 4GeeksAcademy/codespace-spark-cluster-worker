@@ -10,5 +10,6 @@
 			"label": "spark-webUI"
 		}
 	},
-	"postStartCommand": "sudo /opt/spark/sbin/start-worker.sh 74.208.107.78:7077"
+	"postStartCommand": "sudo /opt/spark/sbin/start-worker.sh 74.208.107.78:7077 --webui-port 8080",
+	"postAttachCommand": "htop"
 }
