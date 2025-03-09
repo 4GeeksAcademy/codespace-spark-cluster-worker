@@ -4,12 +4,15 @@
 	"name": "codespace-spark-cluster-worker",
 	"image": "mcr.microsoft.com/devcontainers/python:0-3.11",
 	"onCreateCommand": ".devcontainer/get_spark.sh",
-	"forwardPorts": [8080],
+	"forwardPorts": [8080, 7777],
 	"portsAttributes": {
 		"8081": {
 			"label": "spark-webUI"
+		},
+		"7777": {
+			"label": "spark"
 		}
 	},
-	"postStartCommand": "sudo /opt/spark/sbin/start-worker.sh 74.208.107.78:7077 --webui-port 8080",
+	"postStartCommand": "sudo /opt/spark/sbin/start-worker.sh 74.208.107.78:7077 --port 7777 --webui-port 8080",
 	"postAttachCommand": "htop"
 }
