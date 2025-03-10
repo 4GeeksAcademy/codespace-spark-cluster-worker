@@ -13,6 +13,6 @@
 			"label": "spark"
 		}
 	},
-	"postStartCommand": "sudo /opt/spark/sbin/start-worker.sh 74.208.107.78:7077 --port 7777 --webui-port 8080",
+	"postStartCommand": "sudo /opt/spark/sbin/start-worker.sh spark://stunning-train-9w7vwpp6j5f7v54-7077.app.github.dev:7077 --port 7777 --webui-port 8080",
 	"postAttachCommand": "htop"
 }
