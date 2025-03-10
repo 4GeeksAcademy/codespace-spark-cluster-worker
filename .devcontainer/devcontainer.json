@@ -6,7 +6,7 @@
 	"onCreateCommand": ".devcontainer/get_spark.sh",
 	"forwardPorts": [8080, 7777],
 	"portsAttributes": {
-		"8081": {
+		"8080": {
 			"label": "spark-webUI"
 		},
 		"7777": {
